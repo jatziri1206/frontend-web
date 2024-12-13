@@ -9,7 +9,7 @@ const Login = ({ setAuth }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('web-jat-backend.vercel.app/api/login', { nocontrol, password })
+    axios.post('https://web-jat-backend.vercel.app/api/login', { nocontrol, password })
       .then(response => {
         console.log('Usuario autenticado:', response.data);
         setAuth(response.data);

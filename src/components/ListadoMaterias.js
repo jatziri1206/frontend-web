@@ -5,7 +5,7 @@ const ListadoMaterias = () => {
   const [materias, setMaterias] = useState([]);
 
   useEffect(() => {
-    axios.get('web-jat-backend.vercel.app/api/materias')
+    axios.get('https://web-jat-backend.vercel.app/api/materias')
       .then(response => {
         setMaterias(response.data);
       })

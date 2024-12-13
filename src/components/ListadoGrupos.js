@@ -5,7 +5,7 @@ const ListadoGrupos = () => {
   const [grupos, setGrupos] = useState([]);
 
   useEffect(() => {
-    axios.get('web-jat-backend.vercel.app/api/grupos')
+    axios.get('https://web-jat-backend.vercel.app/api/grupos')
       .then(response => {
         setGrupos(response.data);
       })

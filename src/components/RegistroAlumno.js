@@ -21,7 +21,7 @@ const RegistroAlumno = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('web-jat-backend.vercel.app/api/alumnos', formData)
+    axios.post('https://web-jat-backend.vercel.app/api/alumnos', formData)
       .then(response => {
         console.log('Alumno registrado:', response.data);
       })

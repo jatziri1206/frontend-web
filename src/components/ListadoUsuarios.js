@@ -6,7 +6,7 @@ const ListadoUsuarios = () => {
   const [usuarios, setUsuarios] = useState([]);
 
   useEffect(() => {
-    axios.get('web-jat-backend.vercel.app/api/usuarios')
+    axios.get('https://web-jat-backend.vercel.app/api/usuarios')
       .then(response => {
         setUsuarios(response.data);
       })

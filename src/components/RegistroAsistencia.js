@@ -21,7 +21,7 @@ const RegistroAsistencia = () => {
     setHora(currentHora);
 
     // Obtener la lista de grupos desde el backend
-    axios.get('web-jat-backend.vercel.app/api/grupos')
+    axios.get('https://web-jat-backend.vercel.app/api/grupos')
       .then(response => {
         setGrupos(response.data);
       })
@@ -47,7 +47,7 @@ const RegistroAsistencia = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('web-jat-backend.vercel.app/api/asistencias', {
+    axios.post('https://web-jat-backend.vercel.app/api/asistencias', {
       fecha, idgrupo, nocontrol
     })
       .then(response => {

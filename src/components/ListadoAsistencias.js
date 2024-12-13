@@ -5,7 +5,7 @@ const ListadoAsistencias = () => {
   const [asistencias, setAsistencias] = useState([]);
 
   useEffect(() => {
-    axios.get('web-jat-backend.vercel.app/api/asistencias')
+    axios.get('https://web-jat-backend.vercel.app/api/asistencias')
       .then(response => {
         setAsistencias(response.data);
       })
