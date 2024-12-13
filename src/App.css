@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+/* Estilos adicionales para los componentes de grupos */
+
+.list-group-item {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.list-group-item h5 {
+  font-weight: bold;
+}
+
+.list-group-item p {
+  margin: 0;
+}
